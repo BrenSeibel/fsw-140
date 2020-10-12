@@ -1,0 +1,145 @@
+Show all of the information on the Avengers.
+a. Query: SELECT * FROM avengers2;
+
+b. Columns: 21
+
+c. Expected row count: 173
+
+d. Screenshot
+
+Create a new table with information from another super hero group [can be imported from elsewhere or fictitious]. Make sure there is an appropriate header and must be at least 30 rows.
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+Add a column to your new table (the new superheros) for those who are interested in joining the Avengers. Make this be randomly assigned.
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+Add a column to your new table (the new superheros) for their favorite Avenger (have it randomly choose between Anthony Edward "Tony" Stark, Robert Bruce Banner, & Victor Shade).
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+Create an association between the two tables for who is interested in joining the Avengers.
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+Show your association and create a new table for that association.
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+List all Avengers who have more than 1000 appearances in alphabetic order.
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+What Avengers do not have more than 1000 appearances?
+a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+Not more than 500?
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Not more than 50?
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Not more than 50 and female?
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ More than 150, male, and are full members?
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Write a function that can add a new superhero to the Avengers if they are interested in becoming an Avenger and if their favorite Avenger is Victor Shade.
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Write a "totalRecords" function that counts the total amount of records(rows/entries) in a given table.
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Call your totalRecords function on the avengers table. What is the output?
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ There is room for 3 new Avengers so invoke your newMember function 3 times to add 3 new members to the Avengers.
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Show that the addition of new members was successful.
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
+ Remove any tables that are not the original avengers table and prove that they have been removed.
+ a. Query:
+
+b. Columns: 
+
+c. Expected row count: 
+
+d. Screenshot
