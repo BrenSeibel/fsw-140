@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
+import axios from "axios";
 
 const ListItems = ({ collection, deleteItem, type }) => {
 
@@ -21,7 +22,9 @@ const ListItems = ({ collection, deleteItem, type }) => {
                         <br />
                         <p>Genre: {item.genre} </p>
                         <br />
-                        <button onClick={() => dispatch(deleteItem(i))}> Delete </button>
+                        <button onClick={() => {
+                            axios.delete("/deletedb/"+item.idmovies).then(res => console.log(res.data)).catch()
+                            dispatch(deleteItem(i))}}> Delete </button>
                     </div>
                 )
                 }

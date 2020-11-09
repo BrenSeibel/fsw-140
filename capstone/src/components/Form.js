@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from 'react'
 import { selectForm } from '../actions/index'
 import { useDispatch } from 'react-redux'
@@ -32,9 +33,10 @@ const Form = ({ collection, btnName, clearCollection }) => {
     const submit = (event) => {
         event.preventDefault()
         dispatch(collection(inputs))
+        axios.post("/insertdb",inputs).then(res => console.log(res.data)).catch()
         setInputs(intiInputs)
     }
-
+    
     return (
         <div className="main">
             <h1>add new {btnName} here :</h1>
