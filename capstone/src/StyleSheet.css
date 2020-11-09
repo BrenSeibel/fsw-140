@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+}
+
+#root{
+    height: 100vh;
+}
+
+body {
+    font-family: 'Mirza', cursive;
+    text-transform: capitalize;
+    background-image: url('https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Mirza', cursive;
+}
+
+.App{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);    
+    min-height: 100%;
+    grid-template-rows: auto  auto 1fr auto;
+}
+
+.header {
+    grid-column: 1/-1;
+    grid-row: 1;
+    margin: 25px;   
+}
+
+.pageTitle {
+    float: right;
+    margin: 5px;
+    font-size: 65px;
+}
+
+.logo {
+    width: 300px;
+    margin: 15px;
+    display: flex;
+    align-items: flex-start;
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    /* box-shadow: 3px 4px 10px black; */
+}
+.logo:hover{
+    box-shadow: 3px 4px 5px grey;
+}
+
+.navBar {
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 0px;
+    margin: 15px;
+}
+
+.link {
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow:1px 3px 4px;
+    padding: 10px;
+    background:url('https://img.freepik.com/free-vector/white-gray-marble-realistic-texture-background_107791-515.jpg?size=626&ext=jpg')
+}
+
+.link:hover{
+    box-shadow: 3px 4px 5px silver;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:focus {
+    color: orange;
+    text-decoration: none;
+}
+
+.main {
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin: 10px;
+}
+.mainForm {
+    background-color: rgba(253, 251, 251, 0.486);
+    border: thin solid silver;
+    border-radius: 50px;;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+}
+
+.year{
+    width:190px;
+}
+
+button {
+    background-color: whitesmoke;
+    margin: 15px;
+    text-align: center;
+    font-family: 'Mirza', cursive;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 3px 4px 6px black;
+}
+
+input {
+    padding: 5px;
+    margin: 15px;
+    font-family: 'Mirza', cursive;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input:hover {
+    box-shadow: 3px 4px 6px grey;
+}
+
+.genre{
+    margin:15px;
+    font-family: 'Mirza', cursive;
+    font-size:18px;
+}
+
+.collection-header {
+    border: thin solid silver;
+    margin: 25px;
+}
+
+.collection-list {
+    background-color: rgba(221, 220, 220, 0.767);
+    color: black;
+    border: thin solid orange;
+    border-radius: 15px;
+    font-size: 36px;
+    margin: 15px;
+}
+
+.footer {
+    grid-column: 1/-1;
+    grid-row: 4;
+    margin: 10px;
+}
+
+.footerContent  {
+    border: thin solid black;
+    border-radius:25px;
+    font-size: 25px;   
+    position: relative;
+    margin-top:25px;     
+    bottom: 0;
+    width: 100%;
+    display:block;
+}
+
+p {
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+}
+
+p:hover {
+    text-decoration: underline;
+    color: rgb(50, 22, 175);
+}
+
+.fa {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.fa:hover {
+    color: rgb(50, 22, 175);
+}
+
+.collab {
+    margin: 0;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    .header{
+        margin: 0;
+    }
+    .pageTitle{
+        float: none;
+        font-size: 2rem;
+    }
+    .navBar{
+        grid-column: 1/-1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        font-size: 2rem;
+    }
+    .logo{
+        margin: 15px auto;
+    }
+    
+}
