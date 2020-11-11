@@ -17,15 +17,14 @@ x.addEventListener("submit", function(event){
     Destination: ${x.country.value}
     Diet: ${rainbow}`)
 
-    var reservation = `First Name: ${x.fname.value}
-    Last Name: ${x.lname.value}
-    Age: ${x.Age.value}
-    Gender: ${x.gender.value}
-    Destination: ${x.country.value}
-    Diet: ${rainbow}`
+    var reservation = {FirstName: x.fname.value,
+    LastName: x.lname.value,
+    Age: x.Age.value,
+    Gender: x.gender.value,
+    Destination: x.country.value,
+    Diet: rainbow,}
     
-    axios.post("https://localhost:9000/", reservation) 
-    .then(response => {
+    axios.post("http://127.0.0.1:9000/insertdb", reservation).then(response => {
         console.log(response)
     })
     })
